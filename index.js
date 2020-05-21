@@ -15,7 +15,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'name',
-            message: 'What is your project title? (Required)',
+            message: 'What is your PROJECT TITLE? (Required)',
             validate: nameInput => {
                 if (nameInput) {
                 return true;
@@ -28,7 +28,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'description',
-            message: 'Provide a description of your project (Required):',
+            message: 'Provide a DESCRIPTION of your project (Required):',
             validate: nameInput => {
                 if (nameInput) {
                 return true;
@@ -41,19 +41,19 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'confirmTableOfContents',
-            message: 'Would you like to enter information for a table of contents?',
-            default: true
+            message: 'Would you like to enter information for a TABLE OF CONTENTS?',
+            default: false
         },
         {
             type: 'input',
             name: 'tableOfContents',
-            message: 'List table of contents:',
+            message: 'List TABLE OF CONTENTS:',
             when: ({confirmTableOfContents}) => confirmTableOfContents
         },
         {
             type: 'input',
             name: 'installation',
-            message: 'What are the steps required to install your project? (Required)',
+            message: 'What are the steps required to INSTALL your project? (Required)',
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -66,7 +66,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'usage',
-            message: 'How can your application be used? Provide instructions and examples for (Required):',
+            message: 'What is the application USAGE? Provide instructions and examples. (Required)',
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -79,7 +79,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'credits',
-            message: 'List any credits (i.e. collaborators w/ GitHub profile link, 3rd party assets w/ creators & links to their primary web presence, and tutorials followed) (Required):',
+            message: 'List any CREDITS like collaborators, 3rd party assets, and/or tutorials (Required):',
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -92,7 +92,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'license',
-            message: 'List the license type (Required):',
+            message: 'List the LICENSE type (Required):',
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -105,8 +105,8 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'confirmBadges',
-            message: 'Would you like to enter badges?',
-            default: true
+            message: 'Would you like to enter BADGES?',
+            default: false
         },
         {
             type: 'input',
@@ -117,25 +117,25 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'confirmContributing',
-            message: 'Would you like to make your project available to contributors?',
-            default: true
+            message: 'Would you like to make your project available to CONTRIBUTORS?',
+            default: false
         },
         {
             type: 'input',
             name: 'contributing',
-            message: 'What are the guiedlines for contributing?',
+            message: 'What are the guiedlines for CONTRIBUTING?',
             when: ({confirmContributing}) => confirmContributing
         },
         {
             type: 'confirm',
             name: 'confirmTests',
-            message: 'Would you like to write tests for your application?',
-            default: true
+            message: 'Would you like to write TESTS for your application?',
+            default: false
         },
         {
             type: 'input',
             name: 'tests',
-            message: 'Write tests for your application and provide examples on how to run them:',
+            message: 'Write TESTS for your application and provide examples on how to run them:',
             when: ({confirmTests}) => confirmTests
         },
  ]);
