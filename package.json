@@ -1,0 +1,28 @@
+{
+  "name": "possible-mystery",
+  "version": "1.0.0",
+  "description": "possible-mystery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clstanton/possible-mystery.git"
+  },
+  "keywords": [
+    "readme",
+    "generator",
+    "node",
+    "javascript"
+  ],
+  "author": "clstanton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clstanton/possible-mystery/issues"
+  },
+  "homepage": "https://github.com/clstanton/possible-mystery#readme",
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  }
+}
